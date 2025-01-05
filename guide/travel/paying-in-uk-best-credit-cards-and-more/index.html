@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://championtraveler.com/xmlrpc.php">
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<title>Paying in the UK: the Best Credit Cards and More | Champion Traveler</title><link rel="preload" data-rocket-preload="" as="image" href="../../../wp-content/uploads/2018/09/travel-cards.jpg" imagesrcset="https://championtraveler.com/wp-content/uploads/2018/09/travel-cards.jpg 1360w, https://championtraveler.com/wp-content/uploads/2018/09/travel-cards-300x225.jpg 300w, https://championtraveler.com/wp-content/uploads/2018/09/travel-cards-768x576.jpg 768w, https://championtraveler.com/wp-content/uploads/2018/09/travel-cards-1024x768.jpg 1024w, https://championtraveler.com/wp-content/uploads/2018/09/travel-cards-510x382.jpg 510w, https://championtraveler.com/wp-content/uploads/2018/09/travel-cards-1080x810.jpg 1080w" imagesizes="(max-width: 1360px) 100vw, 1360px" fetchpriority="high">
+<meta name='robots' content='max-image-preview:large'>
+<link rel='dns-prefetch' href='../../../index.html'>
+<link rel='dns-prefetch' href='//images.championtraveler.com'>
+
+<link href='../../../index.html' rel='preconnect'>
+<link rel="alternate" type="application/rss+xml" title="Champion Traveler &raquo; Paying in the UK: the Best Credit Cards and More Comments Feed" href="https://championtraveler.com/guide/travel/paying-in-uk-best-credit-cards-and-more/feed/">
+<meta content="Divi v.4.27.4" name="generator"><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='titan-adminbar-styles-css' href='../../../wp-content/plugins/anti-spam/assets/css/admin-bar.css?ver=7.3.8' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-choicesjs-css' href='../../../wp-content/plugins/wpforms/assets/css/integrations/divi/choices.min.css?ver=10.2.0' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-smart-phone-field-css' href='../../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/intl-tel-input.min.css?ver=21.2.8' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-richtext-field-css' href='../../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/richtext.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-content-field-css' href='../../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/content.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-divi-pro-classic-full-css' href='../../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/wpforms-classic-full.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='scss-css' href='../../../wp-content/cache/busting/1/sccss.css?ver=1711561705' type='text/css' media='all'>
+<link rel='stylesheet' id='divi-style-css' href='../../../wp-content/themes/Divi/style-static.min.css?ver=4.27.4' type='text/css' media='all'>
+<link rel='stylesheet' id='pcs-styles-css' href='../../../wp-content/plugins/post-content-shortcodes/styles/default-styles.css?ver=1.0' type='text/css' media='screen'>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://championtraveler.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="canonical" href="index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="shortcut icon" href="../../../wp-content/uploads/2017/06/favicon-1.ico"><!--[if lte IE 8]><script src="https://championtraveler.com/wp-content/plugins/wp-charts/js/excanvas.compiled.js"></script><![endif]-->	<style>
+    			/*wp_charts_js responsive canvas CSS override*/
+    			.wp_charts_canvas {
+    				width:100%!important;
+    				max-width:100%;
+    			}
+
+    			@media screen and (max-width:480px) {
+    				div.wp-chart-wrap {
+    					width:100%!important;
+    					float: none!important;
+						margin-left: auto!important;
+						margin-right: auto!important;
+						text-align: center;
+    				}
+    			}
+    		</style><!-- Google Tag Manager old
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JX4CPN');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">
+setTimeout(function(){
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JX4CPN');
+}, 5000);
+</script>
+
+<script type="rocketlazyloadscript" data-ad-client="ca-pub-8107016909363335" async="" data-rocket-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta name="google-site-verification" content="HmpToV39ZPenDxSUXZXAMdVAInR96_Wxjvo4zUMfBYg"><style id="sccss">.cta1 {
+	background-color: #0665B7 !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+    text-align: center;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 10px;
+    border: none;
+}
+
+#main-content {
+	min-height:100vh;
+}
+
+.ctawide {
+	min-width:100%;
+}
+
+table tr:nth-child(odd) td{
+  background-color: #cfd4d8;
+}
+
+table th{
+  background-color: #cfd4d8;
+  text-transform: none;
+}
+
+.legend-key{
+  padding: .5em;
+  min-height: 1em;
+  min-width: 67px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.centeredKey {
+	text-align:center;
+	padding-bottom:14px;
+}
+
+.et-learn-more h3.heading-more {
+  text-decoration: underline;
+  color: #666;
+}
+
+.besttime {
+  text-align: center;
+  color: #A54B00;
+}
+
+.besttraveltimediv {
+	text-align: center;
+  color: #008400;
+}
+
+.besttraveltime {
+	display:inline-block;
+	text-align:left;
+}
+
+.smallcenter {
+  text-align: center;
+}
+
+.centerbesttimestoptext {
+  text-align: center;
+}
+
+.maxtemp {
+  background-color: #F38630;
+}
+
+.avgtemp {
+  background-color: #2FC527;
+}
+
+.lowtemp {
+  background-color: #6F8CC9;
+}
+
+.precipcolor {
+  background-color: #163c8c;
+}
+
+.snowcolor {
+  background-color: #666;
+}
+  
+.rhcolor {
+  background-color: #004F4C;
+}
+
+.maxwindcolor {
+  background-color: #A56D00;
+}
+
+.avgwindcolor {
+  background-color: #D28F0D;
+}
+
+.touristgraphcolor {
+  background-color: #4C359D;
+}
+
+.lodgingCost {
+	background-color: #4C359D;
+}
+
+.departCost {
+  background-color: #2FC527;	
+}
+
+.returnCost {
+  background-color: #F38630;
+}
+
+.routeWeekdayCost {
+  background-color: #F38630;
+}
+
+.flightRouteMapHolder {
+	text-align:center;
+	padding-bottom:20px;
+	min-height: 421px;
+}
+
+
+table.gsc-search-box td, table.gsc-table-result td, table.gsc-above-wrapper-area-container td, table.gsc-resultsHeader td{
+  background-color: #ffffff !important;
+  border: 0 !important;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2{
+  padding: 0px !important;
+}
+
+.gsc-input-box, table.gsc-above-wrapper-area-container, table.gsc-table-result, table.gsc-search-box {
+      border: 0 !important;
+}
+
+.gsc-adBlock, .gsc-resultsHeader, .gsc-table-cell-thumbnail, .gsc-search-button {
+  display: none !important;
+}
+
+table.gstl_50 {
+  border: 1px solid #171717;
+}
+
+.gsc-results-wrapper-nooverlay {
+    margin-top: 15px !important;
+}
+
+gsc-input-box {
+  table-layout: fixed !important;
+}
+
+#top-menu li li a {
+  text-indent: -28px;
+  padding-left: 28px;
+}
+
+.TotalPrice {
+  color: #2FC527;
+  line-height: 1em;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-weight: 500;
+  display: block;
+  margin-block-start: 1em;
+}
+
+.MiniPerday {
+  color: #2FC527;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size:  0.8rem;
+  display: block;
+}
+
+.et-box-content {
+  padding: 25px;
+}
+
+.comment-body {
+	padding-left: 0px;
+}
+
+.lessexpensive {
+	color: #008400;
+}
+
+.endofpage-breadcrumb {
+  font-size: calc(100% - 2px);
+	padding: 0px;
+}
+
+.hideEmmpty:empty {
+	display:none;
+}
+
+.ChartForcedCenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.simpleBox {
+  border:2px solid #F38630;
+  padding: 30px 40px 30px 40px;
+}</style><style id="et-divi-customizer-global-cached-inline-styles">body,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_blog_grid .et_quote_content blockquote cite,.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_blog_grid .et_link_content a.et_link_main_url,body .et_pb_bg_layout_light .et_pb_post p,body .et_pb_bg_layout_dark .et_pb_post p{font-size:14px}.et_pb_slide_content,.et_pb_best_value{font-size:15px}#main-header,#main-header .nav li ul,.et-search-form,#main-header .et_mobile_menu{background-color:#171717}.et_header_style_centered .mobile_nav .select_page,.et_header_style_split .mobile_nav .select_page,.et_nav_text_color_light #top-menu>li>a,.et_nav_text_color_dark #top-menu>li>a,#top-menu a,.et_mobile_menu li a,.et_nav_text_color_light .et_mobile_menu li a,.et_nav_text_color_dark .et_mobile_menu li a,#et_search_icon:before,.et_search_form_container input,span.et_close_search_field:after,#et-top-navigation .et-cart-info{color:rgba(255,255,255,0.6)}.et_search_form_container input::-moz-placeholder{color:rgba(255,255,255,0.6)}.et_search_form_container input::-webkit-input-placeholder{color:rgba(255,255,255,0.6)}.et_search_form_container input:-ms-input-placeholder{color:rgba(255,255,255,0.6)}@media only screen and (min-width:981px){.et-fixed-header #top-menu a,.et-fixed-header #et_search_icon:before,.et-fixed-header #et_top_search .et-search-form input,.et-fixed-header .et_search_form_container input,.et-fixed-header .et_close_search_field:after,.et-fixed-header #et-top-navigation .et-cart-info{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input::-moz-placeholder{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input::-webkit-input-placeholder{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input:-ms-input-placeholder{color:rgba(255,255,255,0.6)!important}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_lazyload_images wpr_automatic_lazy_rendering wpr_oci wpr_cdn wpr_desktop wpr_dns_prefetch"></head>
+<body class="post-template-default single single-post postid-85319 single-format-standard et_pb_button_helper_class et_fullwidth_nav et_non_fixed_nav et_show_nav et_pb_show_title et_primary_nav_dropdown_animation_slide et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter osx et_pb_gutters3 et_full_width_page et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="../../../index.html">
+						<img src="../../../wp-content/uploads/2021/01/ChampionTraveler-Logo.webp" width="93" height="43" alt="Champion Traveler" id="logo" data-height-percentage="54">
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-170"><a href="../../../travel-weather-map/index.html">Where to Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-8233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8233"><a href="../../../where-should-i-travel-next/index.html">Where should I travel next?</a></li>
+	<li id="menu-item-85611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85611"><a href="../../../travel-weather-map/index.html">Travel Map</a></li>
+</ul>
+</li>
+<li id="menu-item-7885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7885"><a href="../../../best-time-to-travel/index.html">Best Times to Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-44351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44351"><a href="../../../dates/best-time-to-visit-hawaii-us/index.html">Hawaii</a></li>
+	<li id="menu-item-44352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44352"><a href="../../../dates/best-time-to-visit-thailand/index.html">Thailand</a></li>
+	<li id="menu-item-44353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44353"><a href="../../../dates/best-time-to-visit-mexico/index.html">Mexico</a></li>
+	<li id="menu-item-44354" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44354"><a href="../../../dates/best-time-to-visit-orlando-fl-us/index.html">Orlando</a></li>
+	<li id="menu-item-44355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44355"><a href="../../../dates/best-time-to-visit-las-vegas-nv-us/index.html">Las Vegas</a></li>
+	<li id="menu-item-44356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44356"><a href="../../../dates/best-time-to-visit-italy/index.html">Italy</a></li>
+	<li id="menu-item-44357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44357"><a href="../../../dates/best-time-to-visit-greece/index.html">Greece</a></li>
+	<li id="menu-item-44358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44358"><a href="../../../dates/best-time-to-visit-anaheim-ca-us/index.html">Anaheim</a></li>
+	<li id="menu-item-778474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778474"><a href="../../../dates/best-time-to-visit-rome-it/index.html">Rome</a></li>
+	<li id="menu-item-44359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44359"><a href="../../../dates/best-time-to-visit-florida-us/index.html">Florida</a></li>
+	<li id="menu-item-44360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44360"><a href="../../../dates/best-time-to-visit-united-states/index.html">USA</a></li>
+	<li id="menu-item-44361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44361"><a href="../../../dates/best-time-to-visit-united-kingdom/index.html">UK</a></li>
+	<li id="menu-item-603403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-603403"><a href="../../../cheap-flights/index.html">When to Book Flights</a></li>
+</ul>
+</li>
+<li id="menu-item-604570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-604570"><a href="../../../the-cost-of-a-vacation/index.html">Cost of a Trip</a>
+<ul class="sub-menu">
+	<li id="menu-item-604951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604951"><a href="../../../price/cost-of-a-trip-to-rome-it/index.html">Rome</a></li>
+	<li id="menu-item-604952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604952"><a href="../../../price/cost-of-a-trip-to-disneyworld-florida-us/index.html">Disneyworld, FL</a></li>
+	<li id="menu-item-604953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604953"><a href="../../../price/cost-of-a-trip-to-london-gb/index.html">London</a></li>
+	<li id="menu-item-605084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605084"><a href="../../../price/cost-of-a-trip-to-paris-fr/index.html">Paris</a></li>
+	<li id="menu-item-605281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605281"><a href="../../../price/cost-of-a-trip-to-honolulu-hi-us/index.html">Honolulu, Hawaii</a></li>
+	<li id="menu-item-605336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605336"><a href="../../../price/cost-of-a-trip-to-tokyo-jp/index.html">Tokyo</a></li>
+	<li id="menu-item-605337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605337"><a href="../../../price/cost-of-a-trip-to-new-york-ny-us/index.html">New York</a></li>
+	<li id="menu-item-605338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605338"><a href="../../../price/cost-of-a-trip-to-venice-it/index.html">Venice, Italy</a></li>
+	<li id="menu-item-605703" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605703"><a href="../../../price/cost-of-a-trip-to-bangkok-th/index.html">Bangkok</a></li>
+	<li id="menu-item-660329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660329"><a href="../../../price/cost-of-a-trip-to-disneyland-anaheim-ca-us/index.html">Disneyland, CA</a></li>
+	<li id="menu-item-660429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660429"><a href="../../../price/cost-of-a-trip-to-spain/index.html">Spain</a></li>
+	<li id="menu-item-660430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660430"><a href="../../../price/cost-of-a-trip-to-australia/index.html">Australia</a></li>
+	<li id="menu-item-778494" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-778494"><a href="../how-much-does-it-cost-to-travel-to-space/index.html">Space</a></li>
+</ul>
+</li>
+<li id="menu-item-778473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778473"><a href="../../../travel-news-and-analysis/index.html">Travel News</a></li>
+<li id="menu-item-84911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84911"><a href="../../../location-search/index.html">??</a></li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-85319" class="et_pb_post post-85319 post type-post status-publish format-standard has-post-thumbnail hentry category-travel">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Paying in the UK: the Best Credit Cards and More</h1>
+
+						
+												</div>
+				
+					<div class="entry-content">
+					<p><img title="travel-cards" fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-85331" src="../../../wp-content/uploads/2018/09/travel-cards.jpg" alt="travel-cards" width="1360" height="1020" srcset="../../../wp-content/uploads/2018/09/travel-cards.jpg 1360w, ../../../wp-content/uploads/2018/09/travel-cards-300x225.jpg 300w, ../../../wp-content/uploads/2018/09/travel-cards-768x576.jpg 768w, ../../../wp-content/uploads/2018/09/travel-cards-1024x768.jpg 1024w, ../../../wp-content/uploads/2018/09/travel-cards-510x382.jpg 510w, ../../../wp-content/uploads/2018/09/travel-cards-1080x810.jpg 1080w" sizes="(max-width: 1360px) 100vw, 1360px"></p>
+<p>For Americans payment may seem so universal that it&#8217;s a shock to go overseas and experience difficulty in paying. My wife and I recently spent a month in the United Kingdom, especially in Scotland. Paying in Scotland and England is essentially the same experience, but it might not work the way you&#8217;d expect. This guide is to help you avoid extra fees and frustration while traveling to the UK. Most of this advice will apply to world travel and EU travel especially, but there are some country-specific exceptions.</p>
+<h2>1. Find Your Best Credit Cards for Travelers</h2>
+<p>Before you do anything, make sure you have the right credit card. The card should have the following features:</p>
+<ul>
+<li><strong>No foreign exchange rates</strong>! This is very important, because otherwise you&#8217;ll end up paying 3% or more on top of every single transaction. Depending on rate charts this can actually end up costing more than 3%<em> Do not assume</em> your card has no foreign transaction fees just because it&#8217;s made for travelers. <strong>Many miles/travel cards will charge</strong> 3% for anything on a foreign currency.</li>
+<li><strong>Wide acceptance</strong>: Visa and MasterCard are usually best. American Express has surprisingly wide acceptance, but moreso in tourist areas.</li>
+<li><strong>Chipped</strong>: Most US cards now have chips, which is a huge improvement over swipe-only cards for travelers. This is a <em>must have</em>, as some retailers will no longer even accept a card without a chip.</li>
+<li><strong>High rewards, low interest</strong>: As always, you should use a card that maximizes rewards. <em>If</em> you won&#8217;t be paying the card off right away make sure you get a card with a low interest rate. Pro tip for those carrying a balance: call your card company and tell them you&#8217;re considering canceling if they can&#8217;t give you a lower interest rate temporarily. Larger banks will sometimes give you 2.9% or similar on new transactions for 6+ months.</li>
+<li><strong>Rental car coverage</strong>: Waiving the damage waver from the rental company and using the card for all rental expenses will cover you for insurance on the car if the card offer this feature. It is preferable that the card offers primary, rather than secondary, insurance.</li>
+<li>Other benefits: Many cards offer additional insurance-like benefits on travel-related purchases. These vary by card and are discussed below.</li>
+</ul>
+<p>Make sure to sign your card with something that won&#8217;t rub off. Otherwise you&#8217;ll be required to pull out a photo ID with a signature on a regular basis. Unlike in the US, your signature <em>will</em> be checked regularly.</p>
+<p>Some cards may also offer a <strong>chip and PIN</strong> functionality. This PIN is a transaction pin, and shouldn&#8217;t be confused with a cash advance PIN. It&#8217;s more like the PIN people used to use with debit cards before everyone realized you can just run a debit card as credit. In fact, debit cards work fine for this except you miss out on rewards. Chip-and-PIN cards are very rare in the US, and will almost exclusively be marketed as international travel cards. These cards will allow you to act more like a local and use your PIN at the terminal without having a receipt printed and signed. Unless you plan to travel in this region a lot, it&#8217;s probably not worth applying for a new card just to get chip and PIN functionality &#8212; especially when you can just use Google or Apple Pay to accomplish the same thing (see #2).</p>
+<p>Make sure to inform your credit card company of any travel plans to avoid getting locked out. Some have online forms in the members&#8217; section for this, and some you will have to call.</p>
+<h3>The Best Credit Cards for Traveling</h3>
+<p>Without further ado, here are the best credit cards for US travelers. <strong>None of these cards have foreign transaction fees</strong>, as that&#8217;s an instant deal-breaker for a travel credit card. Interest rates will depend on your credit and payment history, so you will need to check on that yourself with your existing cards. We have no financial incentives or partnerships regarding any of these cards or banks. It&#8217;s just here for your information.</p>
+<h4>Amazon Prime Visa</h4>
+<p>You don&#8217;t see the Prime card come up often because it&#8217;s not marketed as a &#8220;travel&#8221; or airline credit card. It is a surprisingly versatile card with good travel benefits, though, especially if you don&#8217;t like being locked into a specific airline or hotel chain. The &#8220;points&#8221; translate directly into dollars on Amazon.com. You must be an Amazon Prime member, but <em>if you already are there is no additional annual fee</em>. It&#8217;s also probably the easiest cards on this list to obtain. You get 5% back at Amazon, making it an obvious card to get anyway for regular Amazon shoppers. Benefits also include 2% on gas stations, restaurants, and drug stores, and 1% on everything else. Auto rental coverage varies, but in the UK ours included primary coverage: another huge benefit we didn&#8217;t even know we had. We got the card to save on Amazon, but we were very impressed using this card abroad. Do note it&#8217;s especially important to inform Chase (who administer the Amazon card) about any travel plans. If you do fly a lot and usually fly with the <em>same</em> airline, you may want to look at some of the options below.</p>
+<p><strong>Best card for Amazon shoppers who travel 1-2 times per year (or not at all)</strong></p>
+<p><a href="https://www.amazon.com/Amazon-Prime-Rewards-Visa-Signature/dp/BT00LN946S" target="_blank" rel="noopener">Learn More</a></p>
+<h4>Bank of America Travel Rewards Visa</h4>
+<p>If you&#8217;re not a Prime member, don&#8217;t travel regularly, and want to avoid an annual fee, this is the next card we&#8217;d recommend. It&#8217;s also a good one for people taking vacations they might not be able to pay off right away, as it offers 0% interest on new purchases for the first 12 cycles (about a year). Rewards are higher than some at 1.5 points per dollar spent, or about 1.5%. The airlines are not listed other than the card being &#8220;not tied to any particular airline,&#8221; but in practice Alaska and Virgin appear to be the most reliable partners. Rental car coverage varies, and is mostly unlisted. You&#8217;ll need to call to see what coverage is like for the country or countries you&#8217;re visiting. This is always a good idea, but we can&#8217;t guarantee any benefits in this realm. All told it&#8217;s a well-balanced travel card for people who don&#8217;t like recurring fees.</p>
+<p><strong>Best card for infrequent travelers who use different airlines and want to avoid annual fees</strong></p>
+<p><a href="https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/" target="_blank" rel="noopener">Learn More</a></p>
+<h4>Chase Sapphire Preferred Visa</h4>
+<p>This card is for frequent travelers who use multiple airlines. It&#8217;s a travel card designed to be used by travelers, especially for travel expenses. Cardmembers earn 1 point (essentially 1%) per dollar spent and 2x the points on any travel and dining expenses. Points can be transferred into other rewards programs at hotels (IHG, Hyatt, Marriott, Ritz Carlton) and airlines (United, JetBlue, British Airways, Virgin Atlantic, Southwest, and some smaller airlines). When booking directly through the Chase Rewards site you earn an additional 25%. The resulting rewards on hotel, airline, and dining expenses is as high as 2.5 points (essentially 2.5%). Further benefits include auto rental coverage as primary insurance without any additional fee, making it a good card to rent a car with. There are some additional benefits with baggage delay insurance and trip insurance, but the terms are painfully complex. The worst thing about the Sapphire Preferred card is the $95 annual fee that kicks in after the first year. This makes it mostly desirable for someone who travels a lot and wants a few different airlines.</p>
+<p><strong>Best card for frequent travelers who want to maximize rewards across cards</strong></p>
+<p><a href="https://creditcards.chase.com/a1/sapphire/compare" target="_blank" rel="noopener">Learn More</a></p>
+<h4>CapitalOne Venture Rewards Visa</h4>
+<p>This travel card from CapitalOne is a fantastic option for people who love to travel and don&#8217;t want to manage swapping cards for every occasion to earn an extra percent here or there. You earn 2 points (2%) on every purchase, period. There are no limits or purchase types to manage, but you can earn quite a bit more (up to 10%) when booking through a qualifying hotel on the Hotels.com CapitalOne partnership portal. Airline partnerships include Aer Lingus, Air France/KLM, British Airways, Iberia, JetBlue, Singapore, Southwest, United, Virgin Atlantic, with more partnerships in the works. These rewards are similar to some of the best non-travel credit cards, and only the $95 annual fee (waived the first year) makes this more restricted to a traveler.</p>
+<p><strong>Best for travelers who want to use one card for all purchases earning travel rewards</strong></p>
+<p><a href="https://www.capitalone.com/credit-cards/venture/" target="_blank" rel="noopener">Learn More</a></p>
+<h4>Your Preferred Airline&#8217;s Card</h4>
+<p>It&#8217;s not a bad idea to use a travel card specifically for the airline you most often fly with. Not only do you often get free benefits like waived baggage fees, but you&#8217;ll qualify for reduced rates and free upgrades on some flights. For example, a Delta flight with Delta&#8217;s American Express cards might cost something like $1,457, but only cost 124,000 miles plus $48 in taxes and fees. This was a real example, and translates into a roughly 12% bonus for using miles. This creates a strange market where buying miles with things like the mileage booster actually makes sense. And every time you use the card you get closer to a higher tier, which means additional benefits and a higher chance of free upgrades. Of course there are downsides that vary per card. Generally there are annual fees and some of these cards (like AmEx) have spotty coverage outside the US requiring a backup. Here are the cards and some quick info for each:</p>
+<ul>
+<li><a href="https://www.aa.com/i18n/aadvantage-program/miles/partners/credit-card/aadvantage-credit-cards.jsp" target="_blank" rel="noopener">American</a> offers multiple Citi Mastercards with varying fees, rewards, and annual fees. The Executive card charges up to $450 as an annual fee, and attempts to compensate with free access to the Admiral&#8217;s Club lounge, increased rewards, and general prestige. The best card is probably the business card, which offers 2% back on all purchases. There&#8217;s also an option with fewer benefits and no annual fee which will be better for all but the most regular traveler.</li>
+<li><a href="https://www.delta.com/content/www/en_US/skymiles/airline-credit-cards/american-express-personal-cards.html" target="_blank" rel="noopener">Delta</a> only offers American Express cards, which makes them a little less useful overseas. The Blue card has foreign transaction fees and no annual fee: you might use it in the US and to book flights, then leave it at home when you actually travel. Benefits and annual fees go up from there, but the Gold is probably the most popular. Delta&#8217;s reward system is probably the most needlessly complex with MQMs, MQDs, <em>and</em> MQSs to track towards earning a higher status. Miles don&#8217;t expire, but status must be re-earned each year like most airlines. These cards can be great if you fly Delta often, but definitely take some time to understand the pros and cons.</li>
+<li><a href="https://www.southwest.com/html/rapidrewards/partners/credit-cards/southwest-airlines-rapid-rewards-cards/index.html" target="_blank" rel="noopener">Southwest</a> has a few Chase Visa cards. The Plus card may be the worst travel card in existence, with poor benefits and a $49 annual fee. The Priority, Premier, and Business cards may make sense for travelers who fly Southwest often. Rewards are essentially 1% back and more with travel partners. Southwest seems a little confused in its marketing, especially between the Priority and Premier cards, so take some time to investigate elsewhere.</li>
+<li><a href="https://www.united.com/ual/en/us/fly/products/chase.html">United</a> has a wide variety of Chase Visa cards. The cards are significantly different and tailored to a specific demographic. The card with the highest rewards at 1.5% also carries a $450 annual fee and some exclusive benefits, making it more worthwhile for high-spending regular travelers.</li>
+<li><a href="https://www.alaskaair.com/content/credit-card/visa-signature" target="_blank" rel="noopener">Alaska</a> is always interesting in that it works with other airlines, including United airlines. This make Alaska&#8217;s Band of America Visa function more like a general airline card than some of the larger carriers. There is only be one card option returning 1% on purchases and 3% on Alaska-booked flights. There&#8217;s a $75 annual fee, and like most cards it includes a free checked bag when you use the card to book. Sign-up bonuses vary, but right now it&#8217;s a pretty sweet deal for a buy-one-get-one-free ticket up to $.</li>
+<li><a href="https://trueblue.jetblue.com/web/trueblue/jetblue-credit-card-comparison" target="_blank" rel="noopener">JetBlue</a> has some Barclays Mastercards, and the $0 annual fee card actually isn&#8217;t bad with no transaction fees. Of course it lacks some of the mileage bonuses that the $99 annual fee plus card has, which you&#8217;ll make back if you&#8217;re a big spender or a big traveler.</li>
+</ul>
+<p>As a final thought, do use the benefits on these cards, but use them responsibly. If you&#8217;re going to spend the same amount of money, not using a credit card with rewards is throwing money away. However, after selecting the best card(s), try your best to ignore the rewards and spend like you&#8217;re spending cash while avoiding rolling balances. Even if you get 5% back, you&#8217;re still spending 95% of the money. Spending more to earn more or reach higher status is a fool&#8217;s errand. Watch out for annual fees, and beware the fleeting sense of prestige carrying a different color of card might give you.</p>
+<p>&nbsp;</p>
+<h2>2. Use Google Pay and Apple Pay</h2>
+<p>I highly suggest using Google Pay as much as possible. In the UK this worked about 95% of the time and it made everyone&#8217;s lives much easier. This does require your phone have NFC (near-field communication) turned on, but that&#8217;s almost universal for phones made in the last 5 years. Paying by phone saves a tremendous amount of time, and the people you&#8217;re buying from will prefer it. Most merchants are not used to having you sign. Only Americans have to sign, and it&#8217;s a little annoying for them each time to gather the signature, check it, then store the receipt. Locals pay quickly with a contactless card or by entering their PIN into the terminal instead of signing. You&#8217;ll know you can pay with Google almost every time you see this icon on a credit card terminal:</p>
+<p><img title="wireless-pay-75" decoding="async" class="size-full wp-image-85324 alignnone" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2088'%3E%3C/svg%3E" alt="wireless-pay-75" width="75" height="88" data-lazy-src="https://championtraveler.com/wp-content/uploads/2018/09/wireless-pay-75.png"><noscript><img title="wireless-pay-75" decoding="async" class="size-full wp-image-85324 alignnone" src="../../../wp-content/uploads/2018/09/wireless-pay-75.png" alt="wireless-pay-75" width="75" height="88"></noscript></p>
+<p>If paying with a phone seems insecure to you, remember that you can turn on fingerprint verification on supporting phones, or you can always use PIN verification. A very few merchants will not allow you to pay by phone for large transactions, but every time I saw this icon I was able to pay with Google Pay. Here&#8217;s how you do it.</p>
+<ul>
+<li>Make sure you have a shortcut to Pay. Many phones come with a default icon for Send, but that&#8217;s actually a shortcut within the Pay app and not what we&#8217;re looking for. On Android phones you can switch cards by pressing and holding on the shortcut.</li>
+<li>Choose the card (from step 1) that you want to pay with, and <strong>set it up well before you need to pay</strong>. Some card companies want to verify the card with temporary transactions, which can take up to a week. Most will verify the card with the same login you use to pay and access your card online.</li>
+<li>Make the card your default terminal payment method by clicking the contactless icon (the same as above).</li>
+<li><strong>Make sure your NFC is on </strong>and your phone is unlocked. Most phones will show a N next to the WiFi icon. The Pay apps will also give you an alert that NFC is off when you open them. You do not usually need to have the app open to pay.</li>
+<li>Consider practicing before you leave, or practice somewhere friendly where the lines aren&#8217;t too long. It should go smoothly if you follow these steps, but it&#8217;s nice to be sure.</li>
+</ul>
+<p>Important: Some merchants will tell you that contactless is only allowed on payments under 30-35 pounds. <strong>This is not true for the phone if you see the icon above. </strong>Some terminals will turn off the NFC functionality if the amount is higher, but this is store specific and rare. I was able to pay bills exceeding 1,000 pounds with my phone. This happened to me many times:</p>
+<p>&#8220;That&#8217;ll be 75 pounds, please.&#8221;</p>
+<p>I&#8217;d see the terminal in front of me with the icon displayed, open my phone and touch it to the terminal. I got the blue check mark, so I knew it had worked.</p>
+<p>&#8220;Oh, I&#8217;m sorry sir that only works on transactions under thirty&#8230;. wait a minute&#8230; huh, it went through.&#8221;</p>
+<p>&#8220;Yeah, the limit&#8217;s higher when you pay by phone.&#8221;</p>
+<p>&#8220;Oh, I never knew that!&#8221;</p>
+<p>This is technology with few early adopters so far, so be patient. If you don&#8217;t have a terminal in front of you and staff tells you it only works for under 35 pounds, <em>don&#8217;t argue</em>. Just give them your card and your thanks. Not only is this conflict unnecessary, but you may end up feeling like an ass if the store you&#8217;re in a store with one of the rare point-of-sale terminals that lock down card <em>and</em> phone payments on larger transaction.</p>
+<p><strong>Important</strong>: Even though you&#8217;re using Google pay, which has near-universal acceptance on all but the oldest systems, the type of card you&#8217;re using must still be accepted by the merchant. You cannot use your Discover card with Google Pay and expect it to work. Fees will still apply, so it&#8217;s very important to get a card without foreign transaction fees as discussed in step 2.</p>
+<h2>3. (Avoid) Exchange Rates and Cash</h2>
+<p>Cash businesses are rare these days, but they still exist. At this point it&#8217;s mostly stubborn old-school businesses that won&#8217;t take a card, but there were a few very rural businesses that don&#8217;t want to pay for a slow satellite connection. It&#8217;s also nice to have cash on hand for things like tips. In the UK we only went through about $100 per week, and that was with a lot more tipping than was necessary.</p>
+<p>The first thing to know is that <strong>exchanging cash is a bad idea, period</strong>. Everyone will tell you not to change in the airport. It&#8217;s true that the exchange rates at airports are worse, but what no one tells is is they&#8217;re not really <em>good</em> anywhere. It&#8217;s often hard to tell if you&#8217;re getting a good deal because rates are giving in confusing non-standard buy-and-sell terms rather than in a simple exchange rate. Banks may give you a fair rate with a small fee, but it&#8217;s unlikely your bank has an international branch where you can exchange. Most UK and European banks will only change currency for you if you&#8217;re a member of the bank, which means you have to be a resident. You&#8217;re therefore limited to commercial currency exchange, which you&#8217;ll only find around tourist destinations.</p>
+<p>Instead, find an ATM from a legitimate bank and <strong>withdraw cash after arriving</strong>. You&#8217;ll usually pay a fee, so it&#8217;s best to do this all at one time if you feel comfortable carrying that much money around. In almost every scenario (basically anything over $50) it&#8217;s much better to pay a one-time fee than to lose a fifth of your money to a shady currency exchange business. You can store the cash along with your passport and other valuables back in a hotel safe if you have one. Otherwise, just use your credit card with your Pay app as much as possible.</p>
+<p>If you absolutely <em>must</em> exchange cash for some reason, look up exchange rates and make sure you understand how much you&#8217;re about to lose. 2-3% is fair profit, but 10-20% is much more common. Losing 20% before even buying anything should never be plan A.</p>
+<h2>4. Understanding Payment and Etiquette</h2>
+<p>First, let&#8217;s discuss <strong>tipping</strong>. As you may know, tipping in most of the world is not like tipping in the USA. In the States some professions make pathetic hourly wages with the justification that it&#8217;ll be made back on tips. In Europe and the UK tipping really is optional. People are paid a fair hourly wage. Tips are always appreciated, but you should never exceed 10%. Acceptable &#8220;good tips&#8221; are 5% or 1-2 pounds per person in your party. You might think tipping 20% is nice, and it will of course be accepted with thanks, but it will also make you look more ignorant than generous.</p>
+<p>Many Americans are shocked by what they perceive as <strong>&#8220;poor service&#8221;</strong> in Europe. They&#8217;ll often blame this on the fact that tips are a smaller part of the transaction. There may be some truth, as many restaurants are not so highly staffed, but it has more to do with culture. Don&#8217;t assume people are unfriendly if they&#8217;re not smiling nonstop. Endless smiles are an American thing, and seen as fake in most of the world. Don&#8217;t assume you&#8217;re being ignored if someone isn&#8217;t checking on you to refill water and take any orders every 2 minutes. What Americans do when we eat out would be called <em>speed dining</em> in most of the world. It would be considered rude in much of Europe for a server to constantly ask if they needed anything. The table would be thinking, &#8220;No, now would you stop interrupting us every five minutes?&#8221; People are not in as much of a rush. It&#8217;ll take a little longer, because it&#8217;s just assumed you&#8217;re not impatient and in a hurry. If you <em>are</em> in a hurry to eat quickly by all means let your server know. Otherwise, try to dial it back. Take your time, and let the food and drink sit in your mouth a while. Enjoy the company and the conversation. If you really want something it&#8217;s not rude to get a server&#8217;s attention. Don&#8217;t snap or call. Eye contact with a an eyebrow raise is best and usually met with a single nod that says &#8220;I&#8217;ll be right there.&#8221; Then you double-nod back, &#8220;I am happy to wait.&#8221; This shouldn&#8217;t be all that foreign as American fine-dining restaurants are similar. Just don&#8217;t have a tantrum if you need to hydrate and your water isn&#8217;t always full.</p>
+<p>Finally, you may want to understand some things about checks (more commonly and accurately called bills), especially in restaurants. You will <strong>need to ask for the bill</strong>. Otherwise you&#8217;ll be sitting around for hours while the staff wonder why you&#8217;re content to hold the table and look annoyed rather than pay and leave. Once you ask your bill will be presented. Usually this is just so you can check it. If paying by card you can put it down, just like in the states. Or, you can just tell your server the bill looks fine, thank you. They will then bring out the terminal so you can pay. They (or the manager) will bring the terminal around anyway, as this eliminates the need for a back-and-forth trip just to get your signature and retrieve your card. I&#8217;m also a fan of this method because it reduces the risk of identity theft. Many credit card numbers are stolen between the table and the till in the US, which is far less likely if the card never leaves the table.</p>
+<h2>5. Plan Your Trip, Call Your Credit Card, and Have Fun</h2>
+<p>You can use our site to <a href="../../../best-time-to-travel/index.html">determine the best times to travel</a>. We recommend calling your credit card to verify your trip dates and locations. If you don&#8217;t have one of the cards above make sure you won&#8217;t be paying a foreign transaction fee. You should also take some time to understand your rental car benefits if you plan on renting. Does the card provide a damage waiver? Is it primary or secondary insurance? Chances are good you have to waive the (usually) overpriced damage waiver from the rental car company. Make sure you understand any additional benefits, such as lost baggage or travel insurance. Don&#8217;t forget to use your best card for travel expenses when booking, and check whether they have a rewards portal to book through for extra savings.</p>
+<p>That&#8217;s it. You&#8217;re set. Leave behind any payment methods you definitely won&#8217;t be using, and enjoy your destination.</p>
+					</div>
+					<div class="et_post_meta_wrapper">
+										</div>
+				</article>
+
+						</div>
+
+					</div>
+	</div>
+	</div>
+
+
+			<footer data-wpr-lazyrender="1" id="main-footer">
+				
+
+		
+				<div id="et-footer-nav">
+					<div class="container">
+						<ul id="menu-footer" class="bottom-nav"><li id="menu-item-84903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84903"><a href="../../../location-search/index.html">Location Search</a></li>
+<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../../about/index.html">About Champion Traveler</a></li>
+<li id="menu-item-8027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8027"><a href="https://twitter.com/ChampTravelers">Twitter</a></li>
+<li id="menu-item-8139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8139"><a href="../../../disclosure-statement/index.html">Disclosure Statement</a></li>
+<li id="menu-item-8134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8134"><a href="../../../privacy-policy/index.html">Privacy Policy</a></li>
+<li id="menu-item-778515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-778515"><a href="../../../contact-champion-traveler/index.html">Contact</a></li>
+</ul>					</div>
+				</div>
+
+			
+				<div id="footer-bottom">
+					<div class="container clearfix">
+									</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var fonts_loaded =[];
+			</script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.htmll?id=GTM-5JX4CPN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/championtraveler.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"711e154ff7","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"6ab0161967","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"85319","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.4" id="divi-custom-script-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.4" id="fitvids-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.4" id="et-core-common-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="../../../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
+
+

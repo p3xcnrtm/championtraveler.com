@@ -1,0 +1,212 @@
+.cta1 {
+	background-color: #0665B7 !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+    text-align: center;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 10px;
+    border: none;
+}
+
+#main-content {
+	min-height:100vh;
+}
+
+.ctawide {
+	min-width:100%;
+}
+
+table tr:nth-child(odd) td{
+  background-color: #cfd4d8;
+}
+
+table th{
+  background-color: #cfd4d8;
+  text-transform: none;
+}
+
+.legend-key{
+  padding: .5em;
+  min-height: 1em;
+  min-width: 67px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.centeredKey {
+	text-align:center;
+	padding-bottom:14px;
+}
+
+.et-learn-more h3.heading-more {
+  text-decoration: underline;
+  color: #666;
+}
+
+.besttime {
+  text-align: center;
+  color: #A54B00;
+}
+
+.besttraveltimediv {
+	text-align: center;
+  color: #008400;
+}
+
+.besttraveltime {
+	display:inline-block;
+	text-align:left;
+}
+
+.smallcenter {
+  text-align: center;
+}
+
+.centerbesttimestoptext {
+  text-align: center;
+}
+
+.maxtemp {
+  background-color: #F38630;
+}
+
+.avgtemp {
+  background-color: #2FC527;
+}
+
+.lowtemp {
+  background-color: #6F8CC9;
+}
+
+.precipcolor {
+  background-color: #163c8c;
+}
+
+.snowcolor {
+  background-color: #666;
+}
+  
+.rhcolor {
+  background-color: #004F4C;
+}
+
+.maxwindcolor {
+  background-color: #A56D00;
+}
+
+.avgwindcolor {
+  background-color: #D28F0D;
+}
+
+.touristgraphcolor {
+  background-color: #4C359D;
+}
+
+.lodgingCost {
+	background-color: #4C359D;
+}
+
+.departCost {
+  background-color: #2FC527;	
+}
+
+.returnCost {
+  background-color: #F38630;
+}
+
+.routeWeekdayCost {
+  background-color: #F38630;
+}
+
+.flightRouteMapHolder {
+	text-align:center;
+	padding-bottom:20px;
+	min-height: 421px;
+}
+
+
+table.gsc-search-box td, table.gsc-table-result td, table.gsc-above-wrapper-area-container td, table.gsc-resultsHeader td{
+  background-color: #ffffff !important;
+  border: 0 !important;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2{
+  padding: 0px !important;
+}
+
+.gsc-input-box, table.gsc-above-wrapper-area-container, table.gsc-table-result, table.gsc-search-box {
+      border: 0 !important;
+}
+
+.gsc-adBlock, .gsc-resultsHeader, .gsc-table-cell-thumbnail, .gsc-search-button {
+  display: none !important;
+}
+
+table.gstl_50 {
+  border: 1px solid #171717;
+}
+
+.gsc-results-wrapper-nooverlay {
+    margin-top: 15px !important;
+}
+
+gsc-input-box {
+  table-layout: fixed !important;
+}
+
+#top-menu li li a {
+  text-indent: -28px;
+  padding-left: 28px;
+}
+
+.TotalPrice {
+  color: #2FC527;
+  line-height: 1em;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-weight: 500;
+  display: block;
+  margin-block-start: 1em;
+}
+
+.MiniPerday {
+  color: #2FC527;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size:  0.8rem;
+  display: block;
+}
+
+.et-box-content {
+  padding: 25px;
+}
+
+.comment-body {
+	padding-left: 0px;
+}
+
+.lessexpensive {
+	color: #008400;
+}
+
+.endofpage-breadcrumb {
+  font-size: calc(100% - 2px);
+	padding: 0px;
+}
+
+.hideEmmpty:empty {
+	display:none;
+}
+
+.ChartForcedCenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.simpleBox {
+  border:2px solid #F38630;
+  padding: 30px 40px 30px 40px;
+}

@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://championtraveler.com/xmlrpc.php">
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<title>10 Best Places in mid March for Cheap Flights/Hotels, Nice Weather, and Small Crowds | Champion Traveler</title><link rel="preload" data-rocket-preload="" as="style" href="../../css-2?family=Droid%20Sans%3A&#038;display=swap"><link rel="stylesheet" href="../../css-2?family=Droid%20Sans%3A&#038;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="../../css-2?family=Droid%20Sans%3A&#038;display=swap"></noscript><link rel="preload" data-rocket-preload="" as="image" href="../../wp-content/uploads/2021/01/ChampionTraveler-Logo.webp" fetchpriority="high">
+<meta name='robots' content='max-image-preview:large'>
+<link rel='dns-prefetch' href='../../index.html'>
+<link rel='dns-prefetch' href='//images.championtraveler.com'>
+<link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect'>
+<link href='../../index.html' rel='preconnect'>
+<meta content="Divi v.4.27.4" name="generator"><style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='titan-adminbar-styles-css' href='../../wp-content/plugins/anti-spam/assets/css/admin-bar.css?ver=7.3.8' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-choicesjs-css' href='../../wp-content/plugins/wpforms/assets/css/integrations/divi/choices.min.css?ver=10.2.0' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-smart-phone-field-css' href='../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/intl-tel-input.min.css?ver=21.2.8' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-richtext-field-css' href='../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/richtext.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-content-field-css' href='../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/content.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='wpforms-divi-pro-classic-full-css' href='../../wp-content/plugins/wpforms/assets/pro/css/integrations/divi/wpforms-classic-full.min.css?ver=1.9.2.3' type='text/css' media='all'>
+<link rel='stylesheet' id='scss-css' href='../../wp-content/cache/busting/1/sccss.css?ver=1711561705' type='text/css' media='all'>
+<link rel='stylesheet' id='divi-style-css' href='../../wp-content/themes/Divi/style-static.min.css?ver=4.27.4' type='text/css' media='all'>
+<link rel='stylesheet' id='pcs-styles-css' href='../../wp-content/plugins/post-content-shortcodes/styles/default-styles.css?ver=1.0' type='text/css' media='screen'>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://championtraveler.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="canonical" href="index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="shortcut icon" href="../../wp-content/uploads/2017/06/favicon-1.ico"><!--[if lte IE 8]><script src="https://championtraveler.com/wp-content/plugins/wp-charts/js/excanvas.compiled.js"></script><![endif]-->	<style>
+    			/*wp_charts_js responsive canvas CSS override*/
+    			.wp_charts_canvas {
+    				width:100%!important;
+    				max-width:100%;
+    			}
+
+    			@media screen and (max-width:480px) {
+    				div.wp-chart-wrap {
+    					width:100%!important;
+    					float: none!important;
+						margin-left: auto!important;
+						margin-right: auto!important;
+						text-align: center;
+    				}
+    			}
+    		</style><!-- Google Tag Manager old
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JX4CPN');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">
+setTimeout(function(){
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JX4CPN');
+}, 5000);
+</script>
+
+<script type="rocketlazyloadscript" data-ad-client="ca-pub-8107016909363335" async="" data-rocket-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta name="google-site-verification" content="HmpToV39ZPenDxSUXZXAMdVAInR96_Wxjvo4zUMfBYg"><style id="sccss">.cta1 {
+	background-color: #0665B7 !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+    text-align: center;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 10px;
+    border: none;
+}
+
+#main-content {
+	min-height:100vh;
+}
+
+.ctawide {
+	min-width:100%;
+}
+
+table tr:nth-child(odd) td{
+  background-color: #cfd4d8;
+}
+
+table th{
+  background-color: #cfd4d8;
+  text-transform: none;
+}
+
+.legend-key{
+  padding: .5em;
+  min-height: 1em;
+  min-width: 67px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.centeredKey {
+	text-align:center;
+	padding-bottom:14px;
+}
+
+.et-learn-more h3.heading-more {
+  text-decoration: underline;
+  color: #666;
+}
+
+.besttime {
+  text-align: center;
+  color: #A54B00;
+}
+
+.besttraveltimediv {
+	text-align: center;
+  color: #008400;
+}
+
+.besttraveltime {
+	display:inline-block;
+	text-align:left;
+}
+
+.smallcenter {
+  text-align: center;
+}
+
+.centerbesttimestoptext {
+  text-align: center;
+}
+
+.maxtemp {
+  background-color: #F38630;
+}
+
+.avgtemp {
+  background-color: #2FC527;
+}
+
+.lowtemp {
+  background-color: #6F8CC9;
+}
+
+.precipcolor {
+  background-color: #163c8c;
+}
+
+.snowcolor {
+  background-color: #666;
+}
+  
+.rhcolor {
+  background-color: #004F4C;
+}
+
+.maxwindcolor {
+  background-color: #A56D00;
+}
+
+.avgwindcolor {
+  background-color: #D28F0D;
+}
+
+.touristgraphcolor {
+  background-color: #4C359D;
+}
+
+.lodgingCost {
+	background-color: #4C359D;
+}
+
+.departCost {
+  background-color: #2FC527;	
+}
+
+.returnCost {
+  background-color: #F38630;
+}
+
+.routeWeekdayCost {
+  background-color: #F38630;
+}
+
+.flightRouteMapHolder {
+	text-align:center;
+	padding-bottom:20px;
+	min-height: 421px;
+}
+
+
+table.gsc-search-box td, table.gsc-table-result td, table.gsc-above-wrapper-area-container td, table.gsc-resultsHeader td{
+  background-color: #ffffff !important;
+  border: 0 !important;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2{
+  padding: 0px !important;
+}
+
+.gsc-input-box, table.gsc-above-wrapper-area-container, table.gsc-table-result, table.gsc-search-box {
+      border: 0 !important;
+}
+
+.gsc-adBlock, .gsc-resultsHeader, .gsc-table-cell-thumbnail, .gsc-search-button {
+  display: none !important;
+}
+
+table.gstl_50 {
+  border: 1px solid #171717;
+}
+
+.gsc-results-wrapper-nooverlay {
+    margin-top: 15px !important;
+}
+
+gsc-input-box {
+  table-layout: fixed !important;
+}
+
+#top-menu li li a {
+  text-indent: -28px;
+  padding-left: 28px;
+}
+
+.TotalPrice {
+  color: #2FC527;
+  line-height: 1em;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 0px;
+  font-weight: 500;
+  display: block;
+  margin-block-start: 1em;
+}
+
+.MiniPerday {
+  color: #2FC527;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size:  0.8rem;
+  display: block;
+}
+
+.et-box-content {
+  padding: 25px;
+}
+
+.comment-body {
+	padding-left: 0px;
+}
+
+.lessexpensive {
+	color: #008400;
+}
+
+.endofpage-breadcrumb {
+  font-size: calc(100% - 2px);
+	padding: 0px;
+}
+
+.hideEmmpty:empty {
+	display:none;
+}
+
+.ChartForcedCenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.simpleBox {
+  border:2px solid #F38630;
+  padding: 30px 40px 30px 40px;
+}</style><style id="et-divi-customizer-global-cached-inline-styles">body,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_blog_grid .et_quote_content blockquote cite,.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_blog_grid .et_link_content a.et_link_main_url,body .et_pb_bg_layout_light .et_pb_post p,body .et_pb_bg_layout_dark .et_pb_post p{font-size:14px}.et_pb_slide_content,.et_pb_best_value{font-size:15px}#main-header,#main-header .nav li ul,.et-search-form,#main-header .et_mobile_menu{background-color:#171717}.et_header_style_centered .mobile_nav .select_page,.et_header_style_split .mobile_nav .select_page,.et_nav_text_color_light #top-menu>li>a,.et_nav_text_color_dark #top-menu>li>a,#top-menu a,.et_mobile_menu li a,.et_nav_text_color_light .et_mobile_menu li a,.et_nav_text_color_dark .et_mobile_menu li a,#et_search_icon:before,.et_search_form_container input,span.et_close_search_field:after,#et-top-navigation .et-cart-info{color:rgba(255,255,255,0.6)}.et_search_form_container input::-moz-placeholder{color:rgba(255,255,255,0.6)}.et_search_form_container input::-webkit-input-placeholder{color:rgba(255,255,255,0.6)}.et_search_form_container input:-ms-input-placeholder{color:rgba(255,255,255,0.6)}@media only screen and (min-width:981px){.et-fixed-header #top-menu a,.et-fixed-header #et_search_icon:before,.et-fixed-header #et_top_search .et-search-form input,.et-fixed-header .et_search_form_container input,.et-fixed-header .et_close_search_field:after,.et-fixed-header #et-top-navigation .et-cart-info{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input::-moz-placeholder{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input::-webkit-input-placeholder{color:rgba(255,255,255,0.6)!important}.et-fixed-header .et_search_form_container input:-ms-input-placeholder{color:rgba(255,255,255,0.6)!important}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_lazyload_images wpr_automatic_lazy_rendering wpr_oci wpr_cdn wpr_desktop wpr_dns_prefetch"></head>
+<body class="post-template-default single single-post postid-84952 single-format-standard et_pb_button_helper_class et_fullwidth_nav et_non_fixed_nav et_show_nav et_primary_nav_dropdown_animation_slide et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_full_width_page et_divi_theme et-db">
+	<div id="page-container">
+
+	
+	
+			<header id="main-header" data-height-onload="66">
+			<div class="container clearfix et_menu_container">
+							<div class="logo_container">
+					<span class="logo_helper"></span>
+					<a href="../../index.html">
+						<img fetchpriority="high" src="../../wp-content/uploads/2021/01/ChampionTraveler-Logo.webp" width="93" height="43" alt="Champion Traveler" id="logo" data-height-percentage="54">
+					</a>
+				</div>
+							<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+											<nav id="top-menu-nav">
+						<ul id="top-menu" class="nav"><li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-170"><a href="../../travel-weather-map/index.html">Where to Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-8233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8233"><a href="../../where-should-i-travel-next/index.html">Where should I travel next?</a></li>
+	<li id="menu-item-85611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85611"><a href="../../travel-weather-map/index.html">Travel Map</a></li>
+</ul>
+</li>
+<li id="menu-item-7885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7885"><a href="../../best-time-to-travel/index.html">Best Times to Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-44351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44351"><a href="../../dates/best-time-to-visit-hawaii-us/index.html">Hawaii</a></li>
+	<li id="menu-item-44352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44352"><a href="../../dates/best-time-to-visit-thailand/index.html">Thailand</a></li>
+	<li id="menu-item-44353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44353"><a href="../../dates/best-time-to-visit-mexico/index.html">Mexico</a></li>
+	<li id="menu-item-44354" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44354"><a href="../../dates/best-time-to-visit-orlando-fl-us/index.html">Orlando</a></li>
+	<li id="menu-item-44355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44355"><a href="../../dates/best-time-to-visit-las-vegas-nv-us/index.html">Las Vegas</a></li>
+	<li id="menu-item-44356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44356"><a href="../../dates/best-time-to-visit-italy/index.html">Italy</a></li>
+	<li id="menu-item-44357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44357"><a href="../../dates/best-time-to-visit-greece/index.html">Greece</a></li>
+	<li id="menu-item-44358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44358"><a href="../../dates/best-time-to-visit-anaheim-ca-us/index.html">Anaheim</a></li>
+	<li id="menu-item-778474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778474"><a href="../../dates/best-time-to-visit-rome-it/index.html">Rome</a></li>
+	<li id="menu-item-44359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44359"><a href="../../dates/best-time-to-visit-florida-us/index.html">Florida</a></li>
+	<li id="menu-item-44360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44360"><a href="../../dates/best-time-to-visit-united-states/index.html">USA</a></li>
+	<li id="menu-item-44361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44361"><a href="../../dates/best-time-to-visit-united-kingdom/index.html">UK</a></li>
+	<li id="menu-item-603403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-603403"><a href="../../cheap-flights/index.html">When to Book Flights</a></li>
+</ul>
+</li>
+<li id="menu-item-604570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-604570"><a href="../../the-cost-of-a-vacation/index.html">Cost of a Trip</a>
+<ul class="sub-menu">
+	<li id="menu-item-604951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604951"><a href="../../price/cost-of-a-trip-to-rome-it/index.html">Rome</a></li>
+	<li id="menu-item-604952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604952"><a href="../../price/cost-of-a-trip-to-disneyworld-florida-us/index.html">Disneyworld, FL</a></li>
+	<li id="menu-item-604953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-604953"><a href="../../price/cost-of-a-trip-to-london-gb/index.html">London</a></li>
+	<li id="menu-item-605084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605084"><a href="../../price/cost-of-a-trip-to-paris-fr/index.html">Paris</a></li>
+	<li id="menu-item-605281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605281"><a href="../../price/cost-of-a-trip-to-honolulu-hi-us/index.html">Honolulu, Hawaii</a></li>
+	<li id="menu-item-605336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605336"><a href="../../price/cost-of-a-trip-to-tokyo-jp/index.html">Tokyo</a></li>
+	<li id="menu-item-605337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605337"><a href="../../price/cost-of-a-trip-to-new-york-ny-us/index.html">New York</a></li>
+	<li id="menu-item-605338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605338"><a href="../../price/cost-of-a-trip-to-venice-it/index.html">Venice, Italy</a></li>
+	<li id="menu-item-605703" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-605703"><a href="../../price/cost-of-a-trip-to-bangkok-th/index.html">Bangkok</a></li>
+	<li id="menu-item-660329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660329"><a href="../../price/cost-of-a-trip-to-disneyland-anaheim-ca-us/index.html">Disneyland, CA</a></li>
+	<li id="menu-item-660429" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660429"><a href="../../price/cost-of-a-trip-to-spain/index.html">Spain</a></li>
+	<li id="menu-item-660430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660430"><a href="../../price/cost-of-a-trip-to-australia/index.html">Australia</a></li>
+	<li id="menu-item-778494" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-778494"><a href="../../guide/travel/how-much-does-it-cost-to-travel-to-space/index.html">Space</a></li>
+</ul>
+</li>
+<li id="menu-item-778473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778473"><a href="../../travel-news-and-analysis/index.html">Travel News</a></li>
+<li id="menu-item-84911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84911"><a href="../../location-search/index.html">??</a></li>
+</ul>						</nav>
+					
+					
+					
+					
+					<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>				</div> <!-- #et-top-navigation -->
+			</div> <!-- .container -->
+					</header> <!-- #main-header -->
+			<div id="et-main-area">
+	
+<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">
+											<article id="post-84952" class="et_pb_post post-84952 post type-post status-publish format-standard has-post-thumbnail hentry category-locations">
+											<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">10 Best Places in mid March for Cheap Flights/Hotels, Nice Weather, and Small Crowds</h1>
+
+						
+												</div>
+				
+					<div class="entry-content">
+					<p>Below are the best locations for a trip from March 19th to March 25th. We&#8217;ve taken into account rain, temperature, travel advisories for safety, and number of tourists in the area. In mid March  each of these places are the perfect balance between temperate weather and smaller crowds, which also translates into better deals for tourists.</p>
+<p>Because we&#8217;ve located areas and times where there is a greater chance for hotels/flights to be under capacity and weather is likely to be temperate and dry, the <strong>best time to book these 10 trips is usually within 1-4 weeks before travel</strong>.</p>
+<h2>1. Santorini, Greece</h2>
+<p>Santorini has perfect weather from March 19th to March 25th. The weather is somewhat nice in the weeks before and ideal in the weeks after. Tourism in the area is somewhat slow during this time. Choosing Santorini this week is a great choice for anyone looking for nice weather and lower prices.</p>
+<p>The graph below shows how temperatures feel given humidity (heat index) and wind chill. Tourist demand is usually the opposite of price: where demand is low prices are too. <strong>For Celsius</strong>: click the &#8220;best time to visit&#8221; link below the graphs.</p>
+<div class='one_half'>
+					<h4>Santorini Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="SantoriniFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var SantoriniFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:8,scaleStartValue:48}; var SantoriniFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [57.4,58,60.3,59.4,57.7,58.7,57.7,59.3,59.9,60.5,60.1,63.3,64.7,65.4,66.2,67.4,67.5,71.1,70.9,73.8,75.4,76.5,77.5,81.1,81.3,81.7,81.6,83,82.6,84.4,83,82.8,83.7,82.3,81,80.4,79.9,77.8,77.2,74.4,74,73,69.4,67.9,68.2,65.7,65.6,65.9,63.2,59.8,59.9,59.3]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [54.5,54.5,56.8,56,54.6,55.7,54.1,55.4,56.1,56.8,56.4,59.2,60.4,61,61.9,62.6,63.1,66.9,67.3,69.2,71.1,72.2,73.5,76.8,77.5,77.9,78.3,79.5,79.4,80.6,79.9,79.6,80.3,79.3,78,77,76.4,74.3,73.3,71.2,70.3,69.2,66.6,64.8,64.7,62.8,62.1,62.4,59.8,56.4,57.2,56.1]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [50.5,49.4,51.6,51.2,49.5,51.1,48.9,49.9,50.6,51.9,51,53.3,54.2,55.1,55.8,56.6,57.3,60.1,61.1,61.5,63.9,65.1,67,69.6,71.9,71.6,73.1,73.8,74.6,74.5,74.8,74.8,75,74.5,73.2,71.9,70.8,69.5,67.9,66.2,65.6,64.2,62.8,60.9,60.2,58.7,57.4,57.3,55.3,51.5,53.2,51.6]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["SantoriniFeltTemperaturesFahrenheit"] = { options: SantoriniFeltTemperaturesFahrenheitOps, data: SantoriniFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Santorini Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitSantorini" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitSantoriniOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitSantoriniData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [65.6,59.1,64.4,78.4,89.9,100,92.8,72.7,46.7,37.5,39.1,40.5]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitSantorini"] = { options: MostPopularTimetoVisitSantoriniOps, data: MostPopularTimetoVisitSantoriniData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-santorini-gr/index.html">the best time to visit Santorini</a></p>
+<h2>2. Tainan, Taiwan</h2>
+<p>The weather in Tainan is excellent during this week with nice temperatures and low chances of rain. The month before is nearly as nice and the month after is not as temperate. Crowds are smallest in size. Go here in mid March if you want absolutely perfect weather and generally lower prices.</p>
+<div class='one_half'>
+					<h4>Tainan Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="TainanFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var TainanFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:7,scaleStartValue:57}; var TainanFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [71.1,69.8,71.8,70.6,72.8,73.2,72.9,74.4,77.3,74.2,78.4,78.8,79.6,79.5,82.2,83.2,83.3,84.7,87,85.9,87.3,87,88,87.8,89.7,89.2,90.4,89.6,89.5,89.2,90.1,88.2,88.8,88.7,87.6,89.2,89.1,88.7,88.6,87.2,86.8,85.7,84.5,83.6,82,80.7,79.5,76.5,74.8,75.4,71.9,71.3]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [63.4,62.9,63.8,63.2,64.7,65.8,65.9,67.5,69.6,67.4,71.8,72.8,73.4,73.2,76,78.1,77.7,79.3,81.6,81.3,82.5,82.5,83.3,83.5,85,85.2,85.9,84.8,84.6,84.5,85.2,83.6,84.1,84.1,83.1,84.3,84.5,83.5,83.4,81.2,80.6,78.9,78.1,77,76.1,74.4,72.8,69.6,67.8,68.2,64.8,64.2]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [57.8,57.7,58.5,58,59.3,60.6,60.5,62,63.8,62.3,66.4,67.6,68.5,68.4,71.3,73.8,73.3,74.8,77.2,77.5,78.6,78.7,79.5,80.2,81,81.5,82,80.9,80.8,80.8,81.5,80,80.6,80.6,79.6,80.6,80.8,79.7,79.5,76.6,75.8,74,73.5,72.2,71.9,69.7,68,64.4,62.5,63.1,59.6,59]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["TainanFeltTemperaturesFahrenheit"] = { options: TainanFeltTemperaturesFahrenheitOps, data: TainanFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Tainan Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitTainan" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitTainanOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitTainanData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [71.7,76.3,63.5,95.8,77.6,76.3,80.4,69.2,80.6,84.1,100,75.2]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitTainan"] = { options: MostPopularTimetoVisitTainanOps, data: MostPopularTimetoVisitTainanData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-tainan-tw/index.html">the best time to visit Tainan</a></p>
+<h2>3. Seville, Spain</h2>
+<p>Due to the lower number of tourists, a trip to Seville in mid March tends to be much less expensive, and the weather couldn&#8217;t be better. This period of ideal weather comes after some less enjoyable seasonal weathe. If booking a longer trip, you&#8217;ll want to know that the weather will be almost as enjoyable for the next 30 days. Note that it can get busy here in other seasons.</p>
+<div class='one_half'>
+					<h4>Seville Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="SevilleFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var SevilleFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:12,scaleStartValue:41}; var SevilleFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [62.4,61.6,61.9,61.1,61.2,63.2,63.4,66,67.5,69.2,71.4,70.3,72.1,73.3,75,75.6,77.8,80,86,83.7,83,88,86.9,91.2,92.6,96.8,97.7,97.3,98.1,97.5,98.7,99.1,97.2,97,95.3,91.7,90.7,86.4,83.5,84.8,82.4,80.3,76.9,73.6,71.5,70.2,66.8,62.6,64.1,62.3,63,61.7]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [52.4,50.6,52.3,51.3,50.9,52.8,53.7,55.3,56.8,57.9,58.8,58.8,60.9,61.7,63.7,64.5,65.9,67.5,72.3,71,70.4,74.5,74,78,78.4,81.8,82.7,82,82.8,82.5,82.9,84.1,82.1,82.1,80.9,78.3,77.4,74.3,72.5,72.5,70.8,68.6,66.2,63,60.6,58.5,56.7,52.2,53.3,52.4,52.9,51.9]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [44.5,42.1,44.1,43.3,41.6,43.5,45.5,45.6,47.5,47.8,47.6,48.7,51,50.9,53.4,55,55,55.1,59.3,58.8,58.7,61.9,62.2,64.7,65.4,67.5,68.6,67.6,68.9,69.2,68.6,70.8,69.2,68.8,68.5,66.8,65.8,64.5,63.3,62.1,61.1,58.6,57.6,54.3,51.8,49.5,48.9,44.1,44.6,44.7,45.1,44]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["SevilleFeltTemperaturesFahrenheit"] = { options: SevilleFeltTemperaturesFahrenheitOps, data: SevilleFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Seville Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitSeville" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitSevilleOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitSevilleData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [89.4,100,57,70.8,49.6,77.4,60.5,55.7,68.2,80.7,66.5,61.9]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitSeville"] = { options: MostPopularTimetoVisitSevilleOps, data: MostPopularTimetoVisitSevilleData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-seville-es/index.html">the best time to visit Seville</a></p>
+<h2>4. Castellammare del Golfo, Italy</h2>
+<p>As with every place on this list, temperatures in Castellammare del Golfo feel excellent, rain is infrequent, and there are no travel advisories at the moment. Tourists looking for hotels and flights are uncommon during this time, so prices may be lower. Because it&#8217;s a little less common of a destination, massive crowds aren&#8217;t likely. We might not recommend visiting earlier than this, and the weeks following have weather that is as good as mid March.</p>
+<div class='one_half'>
+					<h4>Castellammare del Golfo Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="CastellammaredelGolfoFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var CastellammaredelGolfoFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:8,scaleStartValue:47}; var CastellammaredelGolfoFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [60.9,60.8,60.6,58.3,59.9,57.9,58,59.4,61.3,59,62.1,62.4,64.5,64.7,66.2,67.1,69.6,71.2,71,72.8,74.2,73.6,77.2,79.7,81.2,81.1,84.1,84.7,85.2,85.1,85.6,84.9,85.8,86.8,85.5,83.3,81.4,80.2,78.9,77.7,76.9,73.7,72.1,71.9,69.7,67.5,66.6,66.9,63.3,61.6,61.2,60.9]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [56.4,56,55.9,54,55.5,53.7,52.9,54.5,55.8,54.7,56.4,56.9,58.8,59.4,60.6,61.3,63.5,64.6,65.4,66.6,68.1,68.5,71,73.7,75,76,77.9,78.8,79.4,79.5,80.1,80,80.1,80.7,79.7,78.2,76.2,75.2,73.7,72.3,71.6,68.6,67,66.6,65,62.6,61.4,61.4,59.4,57.4,57.2,56.3]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [50.7,50,50,48.7,49.8,48,47,48.9,49.6,49.6,49.6,50.6,52.4,53,54.1,55.2,57.6,58.4,58.9,60.1,61.8,63.2,64.5,67.8,68.7,69.5,71.5,72.6,73.2,73.1,73.9,74.1,73.4,74,73.2,72.6,70,68.8,67.5,65.7,65,62.4,61.1,60,59.4,56.5,55.2,54.9,53.9,51.9,51.4,50.6]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["CastellammaredelGolfoFeltTemperaturesFahrenheit"] = { options: CastellammaredelGolfoFeltTemperaturesFahrenheitOps, data: CastellammaredelGolfoFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Castellammare del Golfo Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitCastellammaredelGolfo" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitCastellammaredelGolfoOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitCastellammaredelGolfoData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [99.3,99.6,77.1,100,99.7,84.6,93.5,80,77.9,64.6,44.4,78.3]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitCastellammaredelGolfo"] = { options: MostPopularTimetoVisitCastellammaredelGolfoOps, data: MostPopularTimetoVisitCastellammaredelGolfoData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-castellammare-del-golfo-it/index.html">the best time to visit Castellammare del Golfo</a></p>
+<h2>5. Tallahassee, FL, US</h2>
+<p>With far fewer travelers booking during this time compared to the busiest months, hotels and airlines will probably offer some incentives to stay during this period. This is a good time to visit, but the prior weeks have worse weather. If you&#8217;re planning to stay for more than a week, you can expect the weather to be almost as nice.</p>
+<div class='one_half'>
+					<h4>Tallahassee Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="TallahasseeFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var TallahasseeFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:13,scaleStartValue:35}; var TallahasseeFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [65.6,66.5,66.2,67.2,66.7,68.1,67.1,72.5,71.6,73.5,78.6,80.2,79.2,82.3,82.8,82.1,85.6,85.6,90.2,87.5,92.3,92.6,93.2,95.3,95.6,93.6,92.9,94.3,93.9,94.7,95,95.1,93.2,93.5,93.3,92.3,92.4,90.2,88.7,86.4,87.6,83.2,81.6,79.3,76.8,74.9,73.5,72.7,72.2,70.6,70.3,69.8]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [51.6,52.1,50.3,52.8,52.1,52.7,50.8,56.8,56.2,57.3,62.9,64.5,63.6,66.8,67.8,67.2,71.4,71.7,75.3,73.6,78.4,78.9,80.1,81.7,81.8,80.8,80.4,81.6,81.5,81.9,82.3,82.4,81,81.3,81.2,79.9,79.7,78,76.2,72.5,73.5,67.4,67,63.9,59.6,59.2,58.5,56.6,56.7,55.2,55.3,56.3]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [40.1,39.3,36.1,39.3,38.2,38.7,35.9,43,42.4,40.8,47.6,49.1,47.9,52.8,52.4,52.3,56.1,57.7,60,59.9,65,67.6,69.4,70.4,71.2,71.7,71.3,72.8,72,72.7,73.8,73.4,72.7,72.8,72,70.3,69.4,68.7,65.5,60.8,61.7,53.3,53.5,49.7,44.6,45.3,44.8,42.5,43.5,42.8,42.9,44.2]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["TallahasseeFeltTemperaturesFahrenheit"] = { options: TallahasseeFeltTemperaturesFahrenheitOps, data: TallahasseeFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Tallahassee Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitTallahassee" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitTallahasseeOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitTallahasseeData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [46.7,57.5,53.6,54.6,60.7,73.6,100,67.5,61.1,77.4,51.6,55.4]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitTallahassee"] = { options: MostPopularTimetoVisitTallahasseeOps, data: MostPopularTimetoVisitTallahasseeData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-tallahassee-fl-us/index.html">the best time to visit Tallahassee</a></p>
+<h2>6. Plano, TX, US</h2>
+<p>The perfect weather in Plano, TX, US during this time falls between some decent weather earlier in the year and ideal weather later. Compared to the rest of the year we expect prices to be much cheaper due to much lower demand.</p>
+<div class='one_half'>
+					<h4>Plano Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="PlanoFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var PlanoFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:13,scaleStartValue:35}; var PlanoFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [55.1,54.1,57,59.3,56.6,57.4,60.9,64.4,63.6,67.2,71.6,71.2,74.4,74.1,76.1,77,79.3,80,82.7,83,85.8,88.7,91.1,92.7,93.2,94.1,93.7,95.6,95.1,96,97.9,99.4,95.1,95,94.6,92,87.3,87.5,86.8,81.7,80.9,79,74.7,73,72.3,65.6,65.6,62.5,58.6,58.9,60.5,54.6]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [43.9,44.3,46.5,47.3,46.3,47.3,49.2,53.3,51.3,55.8,60.9,61.4,63.5,63.6,65.1,66.6,69.6,69.8,73.2,73.5,76.6,79.4,82,83.6,84.2,84.5,84.6,86.4,85.3,86.7,88.4,89.3,85.4,85.6,85.4,82.7,78.5,78.1,77.2,71.7,71,68.2,64.3,62.7,62.1,55.9,55.8,51.7,49,48.2,49.8,44.8]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [35.3,35.9,38.4,38.8,37.9,39.8,40.4,44.4,41.8,46.8,52.5,52.7,54.7,55.2,55.7,57.7,60.7,60.8,65,64.5,69,70.7,73.1,75.4,75.8,76.4,76.4,78.1,76.8,78.1,79.2,80.3,76.6,77,76.3,73.8,71,69.5,67.7,62.6,62.5,58.5,55.6,53.5,53.5,47.9,48.1,43.5,40.6,40.7,41.4,36.9]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["PlanoFeltTemperaturesFahrenheit"] = { options: PlanoFeltTemperaturesFahrenheitOps, data: PlanoFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Plano Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitPlano" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitPlanoOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitPlanoData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [62.8,74.9,55,75.9,84.3,92,87.6,100,92.9,95,64.9,75.8]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitPlano"] = { options: MostPopularTimetoVisitPlanoOps, data: MostPopularTimetoVisitPlanoData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-plano-tx-us/index.html">the best time to visit Plano</a></p>
+<h2>7. Palmerston North, New Zealand</h2>
+<p>Around mid March is the best to visit Palmerston North because prices are significantly lower for the things tourists spend the most on, and the weather is temperate. The weather is wonderful before this, has a perfect season, and then gets slightly less pleasant. </p>
+<div class='one_half'>
+					<h4>Palmerston North Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="PalmerstonNorthFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var PalmerstonNorthFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:9,scaleStartValue:36}; var PalmerstonNorthFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [72.8,73.4,74,74.8,75.3,74.2,74.3,76.5,73.7,72.9,72.6,70.9,71.5,68.7,66.9,65.4,66.3,62.9,62.8,61.6,59.6,57.7,57.5,56.7,56,54.6,54.6,53.6,55.8,55.7,57.7,56.2,56.2,58,59.1,58.8,60.1,60,61.1,61.6,62.1,62,63.1,64.4,64.6,64.9,68.7,69.2,70.3,71.6,71.5,74]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [63.1,63.4,64.1,63.9,65.3,64.5,63.3,65.4,62.5,61.6,61.9,60.8,61.2,58,56.7,55.8,57.5,53.8,53.5,52.2,51.7,49.3,50.3,48.6,48.1,47.5,47.4,45.9,47.8,47.7,50.8,47.6,48.8,49.6,50.5,50.4,52.1,51.6,52.7,53.6,53.8,54,54.6,55.6,55,56,59.6,59.7,60.6,62.4,62,63.9]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [52.3,53,53,53.1,56.2,54.7,52.8,54.6,50.6,49.4,51,50.4,51.6,47.5,45.4,45.2,48.7,43.6,42.1,42.8,42.9,39.3,40.7,39.6,39.5,38.8,39.9,36.7,39.2,38.6,44.3,37.8,41,39.7,41.7,40.6,43.3,42.1,43.4,44.1,45.5,45,45,46.2,44.4,46.8,48.8,50.5,50.5,53.3,52.1,54.3]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["PalmerstonNorthFeltTemperaturesFahrenheit"] = { options: PalmerstonNorthFeltTemperaturesFahrenheitOps, data: PalmerstonNorthFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Palmerston North Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitPalmerstonNorth" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitPalmerstonNorthOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitPalmerstonNorthData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [75.8,75.6,55.6,90,52.1,64.9,79.8,65.7,70.4,36,62.5,100]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitPalmerstonNorth"] = { options: MostPopularTimetoVisitPalmerstonNorthOps, data: MostPopularTimetoVisitPalmerstonNorthData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-palmerston-north-nz/index.html">the best time to visit Palmerston North</a></p>
+<h2>8. Dothan, AL, US</h2>
+<p>Dothan would already be less expensive, and this time of year should be even less expensive. Weather in the 4 weeks prior is usually bad, this week is among the best you can choose for both low crowds and weather, then the weather gets a little worse for a few more weeks.</p>
+<div class='one_half'>
+					<h4>Dothan Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="DothanFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var DothanFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:12,scaleStartValue:37}; var DothanFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [60.8,61,61.3,62.4,61.5,62.9,62.6,67.5,66.2,71.1,74.5,75.9,75,77.7,79.2,78.2,82.8,83.5,87.2,85.3,90.3,91.1,92.6,93.9,94.1,93.4,91.3,93.1,92,93.2,94.1,93.4,90.8,91.4,90.7,89.8,89.4,87.3,84.9,82.3,83.2,78.9,77.6,75.2,72.3,70.6,69.9,66.9,67.9,65.8,64.9,63.6]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [49,49.4,48.8,50.5,49.2,50.8,49.1,55.5,54.2,56.6,62.1,62.8,62.6,65.1,66.1,66,70.5,71.1,74.3,72.9,77.6,78.9,80.1,81.6,81.7,81.5,80.2,81.3,80.8,81.7,82.2,82.1,79.8,79.8,79.4,77.9,77.4,75.4,73.2,69.8,70.6,64.5,64.1,60.8,57.8,57,56,54,54.6,53.2,53.3,52.9]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [40,39.8,38.9,41.4,38.8,40.7,37.9,45.4,44.1,45,51.1,51.7,51.7,54.4,54.7,54.9,59.7,60,62.8,61.6,66.6,69.2,70.9,71.6,72.4,72.8,71.8,73.7,72.5,73.6,74.2,74.6,72.1,71.6,70.6,69.3,68.2,66.7,64,59.4,60.5,52.5,53.1,49.1,45.8,45.4,45.1,42.5,44.4,43.1,44.3,44.6]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["DothanFeltTemperaturesFahrenheit"] = { options: DothanFeltTemperaturesFahrenheitOps, data: DothanFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Dothan Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitDothan" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitDothanOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitDothanData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [46.7,57.5,53.6,54.6,60.7,73.6,100,67.5,61.1,77.4,51.6,55.4]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitDothan"] = { options: MostPopularTimetoVisitDothanOps, data: MostPopularTimetoVisitDothanData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-dothan-al-us/index.html">the best time to visit Dothan</a></p>
+<h2>9. Buena Park, CA, US</h2>
+<p>Buena Park is almost as pleasant to visit earlier in the year, but mid March should be nice each year. Costs during this time should be lower based on the number of visitors. If weather is a major concern, you could expect things to stay nice for a month. </p>
+<div class='one_half'>
+					<h4>Buena Park Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="BuenaParkFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var BuenaParkFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:10,scaleStartValue:42}; var BuenaParkFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [71.6,72.4,74.3,71.6,70.8,70.7,73.1,68.7,73.8,75.4,76.7,73.2,74.6,74.5,75.8,77.5,77.6,80.3,78.3,79,74.7,77.9,78.2,79.2,82.3,84.1,84.8,85.4,85.4,85.6,85.7,84.8,89.1,88.5,92,91,88.3,85.3,89.3,84.6,83.4,81.3,83.6,80.7,77.3,78.2,73.7,73.6,70.1,68.6,67.4,68.3]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [56.1,57.6,58,58.3,57.4,57.7,58.8,57.3,59.7,61.1,62.9,61.1,62.3,62.4,62.7,64.4,65.1,67.3,66.3,67.4,65.3,67,67.4,68.5,70.8,72.1,72.6,73.4,73.7,73.5,73.7,72.9,75.6,75.5,77.9,76.9,74.6,72.2,73.7,71.2,69.6,68.9,68.8,65.7,63.1,63.3,60.1,59.7,57.5,56.1,55.8,54]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [44.5,45.8,45.5,47.7,46.8,47.9,47.7,48.2,49.5,49.9,52.7,52.5,53.1,53.2,52.7,54.6,55.8,57.6,57.3,59.3,58.9,59.6,61,62.4,63,63.8,65.3,65.9,66,66,66.2,65.2,66.7,66.9,68,67.4,65.5,63.8,63,60.7,59.2,60.4,57.4,54.4,52.2,51.9,50,49,47.6,45.9,46.5,42.4]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["BuenaParkFeltTemperaturesFahrenheit"] = { options: BuenaParkFeltTemperaturesFahrenheitOps, data: BuenaParkFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Buena Park Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitBuenaPark" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitBuenaParkOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitBuenaParkData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [69.4,72.9,67.6,87.9,76.3,99,100,84.2,86.7,82.8,48.3,72.9]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitBuenaPark"] = { options: MostPopularTimetoVisitBuenaParkOps, data: MostPopularTimetoVisitBuenaParkData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-buena-park-ca-us/index.html">the best time to visit Buena Park</a></p>
+<h2>10. Iquique, Chile</h2>
+<p>Though maybe the least-well-known location on this list, the weather is also very nice and there are plenty of things to do. For Iquique, this nice period falls between times that have excellent weather and weeks that have even better weather. Hotels and flights should cost significantly less during mid March compared to the average, especially if booking less than a month out.</p>
+<div class='one_half'>
+					<h4>Iquique Perceived Temperature (F)</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="IquiqueFeltTemperaturesFahrenheit" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var IquiqueFeltTemperaturesFahrenheitOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:5,scaleStartValue:55}; var IquiqueFeltTemperaturesFahrenheitData = {labels : ["Jan"," "," "," ","Feb"," "," "," ","Mar"," "," "," "," ","Apr"," "," "," ","May"," "," "," ","Jun"," "," "," "," ","Jul"," "," "," ","Aug"," "," "," "," ","Sep"," "," "," ","Oct"," "," "," ","Nov"," "," "," "," ","Dec"," "," "," "],datasets : [{
+					fillColor 	: "rgba(243,134,48,0)",
+					strokeColor : "rgba(243,134,48,1)",
+					pointColor 	: "rgba(243,134,48,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [76,76.3,77.5,77.8,77.8,79,78.9,77.6,77.5,76.1,76.5,76.4,75.6,74.2,74.2,72.2,71.4,70.2,69,69.2,68.3,67.5,66.5,66,65.7,64.6,63.4,63.4,63.2,62.4,62.9,63,63.2,63.4,63.9,64.5,64.8,64.9,64.8,64.7,65.3,66.8,67.5,68.8,69.2,70.1,70.6,71.3,72.7,73.3,73.6,74.7]
+				},{
+					fillColor 	: "rgba(47,197,39,0)",
+					strokeColor : "rgba(47,197,39,1)",
+					pointColor 	: "rgba(47,197,39,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [70.4,70.6,71.5,71.6,71.5,72.5,72.2,71.1,70.7,70,70.1,70.2,69.2,68.2,68.1,66.4,65.8,64.6,64.3,64.1,63.3,62.8,62.2,62.1,61.6,60.4,59.7,59.7,59.3,58.7,59.2,59.5,59.3,59.3,60,60.4,60.7,60.6,60.6,60.8,61.2,62.2,63,64,64.2,65,65.9,66.3,67.4,68.1,68.2,69.1]
+				},{
+					fillColor 	: "rgba(111,140,201,0)",
+					strokeColor : "rgba(111,140,201,1)",
+					pointColor 	: "rgba(111,140,201,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [64.8,65.3,65.7,65.6,65.7,66.8,66.2,65,64.8,64.3,64.2,64.5,63.4,62.6,62.4,61.1,60.8,60.1,60.5,59.7,58.8,58.7,58.9,59.1,58.2,57.3,56.5,56.9,55.9,55.6,56.3,56.7,56.3,55.8,57,57.7,57.6,57.8,58,57.9,58,58.7,59.5,60.3,60.1,60.8,61.7,61.7,62.6,63.3,62.9,63.9]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["IquiqueFeltTemperaturesFahrenheit"] = { options: IquiqueFeltTemperaturesFahrenheitOps, data: IquiqueFeltTemperaturesFahrenheitData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key maxtemp">High</div>
+<div class="legend-key avgtemp">Average</div>
+<div class="legend-key lowtemp">Low</div>
+				</div><div class='one_half et_column_last'>
+					<h4>Iquique Tourism Demand</h4>
+<p class="shortcode"><div class="aligncenter  wp-chart-wrap" style="max-width: 100%; width:90%; height:auto;margin:5px 20px;" data-proportion="1"><canvas id="MostPopularTimetoVisitIquique" height="625" width="625" class="wp_charts_canvas" data-proportion="1"></canvas></div>
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery(document).ready(function(){var MostPopularTimetoVisitIquiqueOps = {
+		animation: true,scaleFontSize: 12,scaleFontColor: "#666",scaleOverride:true,scaleSteps:5,scaleStepWidth:20,scaleStartValue:0}; var MostPopularTimetoVisitIquiqueData = {labels : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],datasets : [{
+					fillColor 	: "rgba(76,53,157,0)",
+					strokeColor : "rgba(76,53,157,1)",
+					pointColor 	: "rgba(76,53,157,1)",
+					pointStrokeColor : "#FFFFFF",
+					data 		: [100,67.7,58.5,81.9,71.8,65.6,47.9,63.6,59.4,59.4,71.9,61.7]
+				}]};
+         window.wp_charts = window.wp_charts || {};
+	     window.wp_charts["MostPopularTimetoVisitIquique"] = { options: MostPopularTimetoVisitIquiqueOps, data: MostPopularTimetoVisitIquiqueData, type: "Line" };
+    });
+	</script>
+<h5>Key</h5>
+<div class="legend-key touristgraphcolor">Tourists Seeking Accommodations</div>
+				</div><div class='clear'></div>
+<p style="text-align:center;"><a class="maxbutton-21 maxbutton maxbutton-booking-homepage" rel="nofollow noopener" href="https://www.kqzyfj.com/click-8457486-12010988?url=https%3A%2F%2Fwww.booking.com%2Findex.html" data-mbga="{&quot;cat&quot;:&quot;MaxButtons&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;Booking&quot;,&quot;value&quot;:0,&quot;noninteraction&quot;:&quot;false&quot;}"><span class='mb-text' data-nofont="">Find Current Travel Deals</span></a></p>
+<p style="text-align:center;">or learn more about <a href="../../dates/best-time-to-visit-iquique-cl/index.html">the best time to visit Iquique</a></p>
+<p>All of the locations above tend to offer great last-minute deals with hotels and airlines trying to fill what they couldn&#8217;t sell at full price. But if you just want to browse last-minute deals, click the link below.</p>
+<p style="text-align:center;"><a class="maxbutton-23 maxbutton maxbutton-expedia-todays-deals-last-min-text" target="_blank" title="Check Current Deals" rel="nofollow noopener noopener" href="https://www.kayak.com/in?a=championtravelerdl&encoder=27_1&enc_pid=deeplinks&url=/&enc_eid=&enc_lid=&enc_cid=" data-maxbuttoncounter="{&quot;button_id&quot;:&quot;23&quot;,&quot;url&quot;:&quot;https:\/\/www.kayak.com\/in?a=championtravelerdl&amp;amp;encoder=27_1&amp;amp;enc_pid=deeplinks&amp;amp;url=\/&amp;amp;enc_eid=&amp;amp;enc_lid=&amp;amp;enc_cid=&quot;,&quot;check&quot;:&quot;qpUk1xf1&quot;}" data-maxbuttonpage="{&quot;id&quot;:84952,&quot;type&quot;:&quot;post&quot;}"><span class='mb-text'>Check Current Travel Deals</span></a></p>
+
+<h2>Check Another Week</h2>
+<div class='one_fourth'>
+					<p><a href="../best-places-to-visit-in-early-january/index.html">Jan 1st to Jan 7th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-january/index.html">Jan 8th to Jan 14th</a></p>
+<p><a href="../best-places-to-visit-in-mid-january/index.html">Jan 15th to Jan 21st</a></p>
+<p><a href="../best-places-to-visit-in-late-january/index.html">Jan 22nd to Jan 28th</a></p>
+<p><a href="../best-places-to-visit-in-late-january-and-early-february/index.html">Jan 29th to Feb 4th</a></p>
+<p><a href="../best-places-to-visit-in-early-february/index.html">Feb 5th to Feb 11th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-february/index.html">Feb 12th to Feb 18th</a></p>
+<p><a href="../best-places-to-visit-in-mid-february/index.html">Feb 19th to Feb 25th</a></p>
+<p><a href="../best-places-to-visit-in-late-february-and-early-march/index.html">Feb 26th to Mar 4th</a></p>
+<p><a href="../best-places-to-visit-in-early-march/index.html">Mar 5th to Mar 11th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-march/index.html">Mar 12th to Mar 18th</a></p>
+<p><a href="index.html">Mar 19th to Mar 25th</a></p>
+<p><a href="../best-places-to-visit-in-late-march/index.html">Mar 26th to Apr 1st</a></p>
+				</div><div class='one_fourth'>
+					<p><a href="../best-places-to-visit-in-early-april/index.html">Apr 2nd to Apr 8th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-april/index.html">Apr 9th to Apr 15th</a></p>
+<p><a href="../best-places-to-visit-in-mid-april/index.html">Apr 16th to Apr 22nd</a></p>
+<p><a href="../best-places-to-visit-in-late-april/index.html">Apr 23rd to Apr 29th</a></p>
+<p><a href="../best-places-to-visit-in-early-may/index.html">Apr 30th to May 6th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-may/index.html">May 7th to May 13th</a></p>
+<p><a href="../best-places-to-visit-in-mid-may/index.html">May 14th to May 20th</a></p>
+<p><a href="../best-places-to-visit-in-late-may/index.html">May 21st to May 27th</a></p>
+<p><a href="../best-places-to-visit-in-late-may-to-early-june/index.html">May 28th to Jun 3rd</a></p>
+<p><a href="../best-places-to-visit-in-early-june/index.html">Jun 4th to Jun 10th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-june/index.html">Jun 11th to Jun 17th</a></p>
+<p><a href="../best-places-to-visit-in-mid-june/index.html">Jun 18th to Jun 24th</a></p>
+<p><a href="../best-places-to-visit-in-late-june/index.html">Jun 25th to Jul 1st</a></p>
+				</div><div class='one_fourth'>
+					<p><a href="../best-places-to-visit-in-early-july/index.html">Jul 2nd to Jul 8th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-july/index.html">Jul 9th to Jul 15th</a></p>
+<p><a href="../best-places-to-visit-in-mid-july/index.html">Jul 16th to Jul 22nd</a></p>
+<p><a href="../best-places-to-visit-in-late-july/index.html">Jul 23rd to Jul 29th</a></p>
+<p><a href="../best-places-to-visit-in-early-august/index.html">Jul 30th to Aug 5th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-august/index.html">Aug 6th to Aug 12th</a></p>
+<p><a href="../best-places-to-visit-in-mid-august/index.html">Aug 13th to Aug 19th</a></p>
+<p><a href="../best-places-to-visit-in-mid-to-late-august/index.html">Aug 20th to Aug 26th</a></p>
+<p><a href="../best-places-to-visit-in-late-august-to-early-september/index.html">Aug 27th to Sep 2nd</a></p>
+<p><a href="../best-places-to-visit-in-early-september/index.html">Sep 3rd to Sep 9th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-september/index.html">Sep 10th to Sep 16th</a></p>
+<p><a href="../best-places-to-visit-in-mid-to-late-september/index.html">Sep 17th to Sep 23rd</a></p>
+<p><a href="../best-places-to-visit-in-late-september/index.html">Sep 24th to Sep 30th</a></p>
+				</div><div class='one_fourth et_column_last'>
+					<p><a href="../best-places-to-visit-in-early-october/index.html">Oct 1st to Oct 7th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-october/index.html">Oct 8th to Oct 14th</a></p>
+<p><a href="../best-places-to-visit-in-mid-october/index.html">Oct 15th to Oct 21st</a></p>
+<p><a href="../best-places-to-visit-in-late-october/index.html">Oct 22nd to Oct 28th</a></p>
+<p><a href="../best-places-to-visit-in-late-october-to-early-november/index.html">Oct 29th to Nov 4th</a></p>
+<p><a href="../best-places-to-visit-in-early-november/index.html">Nov 5th to Nov 11th</a></p>
+<p><a href="../best-places-to-visit-in-mid-november/index.html">Nov 12th to Nov 18th</a></p>
+<p><a href="../best-places-to-visit-in-mid-to-late-november/index.html">Nov 19th to Nov 25th</a></p>
+<p><a href="../best-places-to-visit-in-late-november-to-early-december/index.html">Nov 26th to Dec 2nd</a></p>
+<p><a href="../best-places-to-visit-in-early-december/index.html">Dec 3rd to Dec 9th</a></p>
+<p><a href="../best-places-to-visit-in-early-to-mid-december/index.html">Dec 10th to Dec 16th</a></p>
+<p><a href="../best-places-to-visit-in-mid-december/index.html">Dec 17th to Dec 23rd</a></p>
+<p><a href="../best-places-to-visit-in-late-december/index.html">Dec 24th to Dec 30th</a></p>
+				</div><div class='clear'></div>
+					</div>
+					<div class="et_post_meta_wrapper">
+										</div>
+				</article>
+
+						</div>
+
+					</div>
+	</div>
+	</div>
+
+
+			<footer data-wpr-lazyrender="1" id="main-footer">
+				
+
+		
+				<div id="et-footer-nav">
+					<div class="container">
+						<ul id="menu-footer" class="bottom-nav"><li id="menu-item-84903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84903"><a href="../../location-search/index.html">Location Search</a></li>
+<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="../../about/index.html">About Champion Traveler</a></li>
+<li id="menu-item-8027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8027"><a href="https://twitter.com/ChampTravelers">Twitter</a></li>
+<li id="menu-item-8139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8139"><a href="../../disclosure-statement/index.html">Disclosure Statement</a></li>
+<li id="menu-item-8134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8134"><a href="../../privacy-policy/index.html">Privacy Policy</a></li>
+<li id="menu-item-778515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-778515"><a href="../../contact-champion-traveler/index.html">Contact</a></li>
+</ul>					</div>
+				</div>
+
+			
+				<div id="footer-bottom">
+					<div class="container clearfix">
+									</div>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+	<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				var fonts_loaded =["Droid Sans"];
+			</script><!--noptimize--><!--email_off--><style type='text/css'>.maxbutton-21.maxbutton.maxbutton-booking-homepage{position:relative;text-decoration:none;display:inline-block;vertical-align:middle;width:300px;height:55px;border:2px outset #6d5900;border-radius:4px 4px 4px 4px;background-color:#0568ae;box-shadow:0px 0px 1px 0px #333333}.maxbutton-21.maxbutton.maxbutton-booking-homepage:hover{border-color:#0568ae;background-color:white;box-shadow:0px 0px 1px 0px #333333}.maxbutton-21.maxbutton.maxbutton-booking-homepage .mb-text{color:#ffffff;font-size:19px;text-align:center;font-style:normal;font-weight:bold;line-height:1em;box-sizing:border-box;display:block;background-color:unset;position:relative;padding:18px 0px 0px 0px;text-shadow:0px 0px 0px #0a0404}.maxbutton-21.maxbutton.maxbutton-booking-homepage:hover .mb-text{color:#0a0405;text-shadow:0px 0px 0px #333333}@media only screen and (min-width:0px) and (max-width:480px){.maxbutton-21.maxbutton.maxbutton-booking-homepage{width:90%}.maxbutton-21.maxbutton.maxbutton-booking-homepage .mb-text{font-size:15px}}
+.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text{position:relative;text-decoration:none;display:inline-block;vertical-align:middle;width:315px;height:55px;border:2px solid #0568ae;border-radius:4px 4px 4px 4px;background-color:#0568ae;box-shadow:0px 0px 2px 0px #333333}.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text:hover{border-color:#0568ae;background-color:white;box-shadow:0px 0px 2px 0px #333333}.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text .mb-text{color:#ffffff;font-family:Droid Sans;font-size:20px;text-align:center;font-style:normal;font-weight:normal;line-height:1em;box-sizing:border-box;display:block;background-color:unset;position:relative;padding:18px 0px 0px 0px;text-shadow:0px 0px 0px #505ac7}.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text:hover .mb-text{color:#0a0405;text-shadow:0px 0px 0px #333333}@media only screen and (min-width:0px) and (max-width:480px){.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text{width:90%}.maxbutton-23.maxbutton.maxbutton-expedia-todays-deals-last-min-text .mb-text{font-size:16px}}@import url(../../css-1);
+</style><!--/email_off--><!--/noptimize-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.htmll?id=GTM-5JX4CPN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<link rel='stylesheet' id='et-shortcodes-css-css' href='../../wp-content/themes/Divi/epanel/shortcodes/css/shortcodes-legacy.css?ver=4.27.4' type='text/css' media='all'>
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css' href='../../wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=4.27.4' type='text/css' media='all'>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/championtraveler.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"711e154ff7","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"6ab0161967","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"84952","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/championtraveler.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#7EBEC5","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.27.4" id="divi-custom-script-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.27.4" id="fitvids-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.27.4" id="et-core-common-js"></script>
+<script type="text/javascript" id="et-shortcodes-js-js-extra">
+/* <![CDATA[ */
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/themes/Divi/epanel/shortcodes/js/et_shortcodes_frontend.js?ver=4.27.4" id="et-shortcodes-js-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/plugins/wp-charts/js/Chart.min.js?ver=6.7.1" id="charts-js-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/plugins/wp-charts/js/functions.js?ver=6.7.1" id="wp-chart-functions-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/plugins/maxbuttons-pro/js/maxbuttons_fonts.js?ver=9.7.8" id="maxbuttons-font-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/plugins/maxbuttons-pro/assets/libraries/js-cookie/js-cookie.min.js?ver=9.7.8" id="mb-js-cookie-js"></script>
+<script type="text/javascript" id="mbpro-js-js-extra">
+/* <![CDATA[ */
+var maxButtonsFront = {"ajaxURL":"https:\/\/championtraveler.com\/wp-admin\/admin-ajax.php","nonce":"c436ab5a74"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async='async' data-rocket-src="https://championtraveler.com/wp-content/plugins/maxbuttons-pro/js/maxbuttons-pro-front.js?ver=9.7.8" id="mbpro-js-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="../../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
+
+
